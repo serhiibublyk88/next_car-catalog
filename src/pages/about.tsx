@@ -1,12 +1,13 @@
-import { NextPage } from "next";
 import Layout from "@/components/layout/Layout";
+import { NextPageAuth } from "@/interfaces/page.interface";
 
-const AboutPage: NextPage = () => {
+const AboutPage: NextPageAuth = () => {
   return (
     <Layout title="About">
       <div style={{ textAlign: "center" }}>About</div>
     </Layout>
   );
 };
+// AboutPage.isOnlyUser = true;
 
 export default AboutPage;
